@@ -22,11 +22,10 @@ for pos in range(preamble_length + 1, len(numbers)):
 result2 = 0
 for pos in range(len(numbers)):
     for i in range(pos, len(numbers) - pos):
-        list = numbers[pos:i]
-        if sum(list) == result1:
-            list.sort()
-            result2 = list[0] + list[-1]
-            print(f'Part 2: sum of {list} is {result1}, {list[0]} + {list[-1]} = answer ({result2})')
+        window = numbers[pos:i]
+        if sum(window) == result1:
+            result2 = min(window) + max(window)
+            print(f'Part 2: sum of {window} is {result1}, {min(window)} + {max(window)} = answer ({result2})')
             break
     if result2:
         break
