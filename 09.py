@@ -17,7 +17,7 @@ for pos in range(preamble_length + 1, len(numbers)):
     if not valid and result1 == 0:
         print(f'Part 1: answer is {numbers[pos]} at position #{pos}')
         result1 = numbers[pos]
-        break;
+        break
 
 result2 = 0
 for pos in range(len(numbers)):
