@@ -1,6 +1,6 @@
 #!/usr/bin/python
 import sys
-from collections import Counter, defaultdict
+from collections import Counter
 
 """
 Learned about Counter today. Neat.
